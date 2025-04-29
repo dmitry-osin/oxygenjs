@@ -5,5 +5,9 @@
   "main": "app.js",
   "author": "Dmitry Osin <d@osin.pro>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.14.0"
+  }
 }
