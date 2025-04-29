@@ -1,6 +1,25 @@
 const mongoose = require('mongoose')
 const { randomUUID } = require('crypto');
 
+/**
+ * User schema definition
+ * 
+ * @typedef User
+ * @property {string} _id
+ * @property {string} login
+ * @property {string} name
+ * @property {string} email
+ * @property {string} password
+ * @property {string} salt
+ * @property {string} role
+ * @property {string} token
+ * @property {string} refreshToken
+ * @property {Date} refreshTokenExpiry
+ * @property {Date} createdAt
+ * @property {Date} updatedAt
+ * @property {Date} deletedAt
+ * @property {boolean} isActive
+ */
 const User = mongoose.model('User', {
     _id: {
         type: mongoose.Schema.Types.UUID,
@@ -89,6 +108,23 @@ const User = mongoose.model('User', {
     }
 });
 
+/**
+ * Post schema definition
+ * 
+ * @typedef Post
+ * @property {string} _id
+ * @property {string} title
+ * @property {string} url
+ * @property {string} description
+ * @property {string} content
+ * @property {boolean} isPublished
+ * @property {Date} createdAt
+ * @property {Date} updatedAt
+ * @property {Date} deletedAt
+ * @property {string} author
+ * @property {string[]} tags
+ * @property {string[]} comments
+ */
 const Post = mongoose.model('Post', {
     _id: {
         type: mongoose.Schema.Types.UUID,
@@ -162,6 +198,17 @@ const Post = mongoose.model('Post', {
     }
 });
 
+/**
+ * Comment schema definition
+ * 
+ * @typedef Comment
+ * @property {string} _id
+ * @property {string} text
+ * @property {string} author
+ * @property {Date} createdAt
+ * @property {Date} updatedAt
+ * @property {Date} deletedAt
+ */
 const Comment = mongoose.model('Comment', {
     _id: {
         type: mongoose.Schema.Types.UUID,
@@ -199,6 +246,18 @@ const Comment = mongoose.model('Comment', {
     }
 });
 
+/**
+ * Tag schema definition
+ * 
+ * @typedef Tag
+ * @property {string} _id
+ * @property {string} name
+ * @property {string} url
+ * @property {string} author
+ * @property {Date} createdAt
+ * @property {Date} updatedAt
+ * @property {Date} deletedAt
+ */
 const Tag = mongoose.model('Tag', {
     _id: {
         type: mongoose.Schema.Types.UUID,
