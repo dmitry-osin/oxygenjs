@@ -1,5 +1,8 @@
 {
     "db": {
         "host": "mongodb://root:root@localhost:27017/oxygen"
+    },
+    "server": {
+        "port": 3000
     }
 }
