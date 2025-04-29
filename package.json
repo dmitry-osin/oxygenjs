@@ -1,0 +1,9 @@
+{
+  "name": "oxygenjs",
+  "version": "1.0.0",
+  "description": "simple blog",
+  "main": "app.js",
+  "author": "Dmitry Osin <d@osin.pro>",
+  "license": "MIT",
+  "private": false
+}
