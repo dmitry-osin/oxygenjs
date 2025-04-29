@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 const { randomUUID } = require('crypto');
 
 /**
@@ -309,5 +309,6 @@ module.exports = {
     User,
     Post,
     Comment,
-    Tag
+    Tag,
+    mongoose
 }

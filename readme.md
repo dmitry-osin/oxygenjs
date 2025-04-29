@@ -12,6 +12,8 @@ Oxygen.js is a full-featured blog web application built with modern JavaScript t
 - **MongoDB** - NoSQL database
 - **Mongoose** - MongoDB object modeling tool
 - **Passport.js** - Authentication middleware
+- **BCrypt.js** - Password hashing library
+- **Transliteration** - Text transliteration library
 - **Webpack** - Module bundler- 
 - **Babel** - JavaScript compiler
 - **ESLint** - JavaScript linter
@@ -23,20 +25,14 @@ Oxygen.js is a full-featured blog web application built with modern JavaScript t
 - **Markdown** - Markup language
 - **Git** - Version control system
 - **GitHub** - Hosting platform
-  
-## Getting Started
-To get started with Oxygen.js, follow these steps:
-1. Clone the repository:
-2. Install dependencies:3. Set up environment variables:
-4. Start the development server:
-5. Access the application in your browser at http://localhost:3000.
 
 ## Prerequisites
 - Node.js (version 14 or higher)
 - MongoDB (version 4.4 or higher)
 - Git
-
-## Installation
+  
+## Getting Started
+To get started with Oxygen.js, follow these steps:
 1. Clone the repository:
 2. Install dependencies:
 3. Set up environment variables:

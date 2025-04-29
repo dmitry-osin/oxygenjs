@@ -1,0 +1,5 @@
+{
+    "db": {
+        "host": "mongodb://root:root@localhost:27017/oxygen"
+    }
+}
