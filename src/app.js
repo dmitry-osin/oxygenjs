@@ -1,13 +1,19 @@
-process.env['NODE_CONFIG_DIR'] = __dirname + '/config/'
+process.env['NODE_CONFIG_DIR'] = __dirname + '/config/';
 
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 
-const path = require('path')
-const config = require('config')
+const path = require('path');
+const config = require('config');
 
-const port = process.env.PORT || config.get('server.port') || 3000
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.set('views engine', 'pug');
+app.set('views', path.join(__dirname, 'templates'));
+
+const port = process.env.PORT || config.get('server.port') || 3000;
 
 app.listen(port, () => {
-    console.log(`Server started on port ${port}`)
-})
+    console.log(`Server is running at ${port}`)
+});
